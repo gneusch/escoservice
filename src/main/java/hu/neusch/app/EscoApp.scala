@@ -1,8 +1,8 @@
 package hu.neusch.app
 
 import hu.neusch.esco.{EscoClasses, EscoOntologyObjectHandler}
-import hu.neusch.io.OntologyLoader
 import hu.neusch.ontology.OntologyObjectHandler
+import hu.neusch.utils.io.OntologyLoader
 import org.semanticweb.owlapi.model.OWLOntology
 
 object EscoApp extends App with OntologyObjectHandler {

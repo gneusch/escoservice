@@ -1,11 +1,9 @@
-package hu.neusch.io
+package hu.neusch.utils.io
 
 import java.io.File
 
 import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.model.{OWLOntology, OWLOntologyManager}
-import org.semanticweb.owlapi.reasoner.OWLReasoner
-import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory
 
 object OntologyLoader {
 
