@@ -1,6 +1,6 @@
 package hu.neusch.esco
 
-object EscoClasses extends Enumeration{
+object EscoClass extends Enumeration{
 
   type EscoClass = Value
   val Structure, NodeLiteral, AssociationObject, Label, Concept, Regulation, MemberConcept, LabelRole, ConceptScheme, Occupation, Skill = Value
