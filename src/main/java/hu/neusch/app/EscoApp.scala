@@ -10,6 +10,8 @@ object EscoApp extends App with OntologyObjectHandler {
   val escoHandler = new EscoOntologyObjectHandler()
 
 //  escoHandler.getEscoClasses.foreach( println(_) )
-  escoHandler.getIndividualsOfEscoClass(EscoClass.Skill).foreach( println(_) )
+  escoHandler.getIndividualsOfEscoClass(EscoClass.Skill).foreach( indiv =>
+    println ( escoHandler.getLabelForIndividual(indiv, "en")() )
+  )
 
 }

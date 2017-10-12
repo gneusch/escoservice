@@ -9,8 +9,8 @@ trait OntologyObjectHandler {
 
   //Reasoner
   def getOWLReasoner(ontology: OWLOntology): OWLReasoner = {
-    val reasonerFactory = new StructuralReasonerFactory();
-    reasonerFactory.createReasoner(ontology);
+    val reasonerFactory = new StructuralReasonerFactory()
+    reasonerFactory.createReasoner(ontology)
   }
 
   //Class
@@ -30,6 +30,10 @@ trait OntologyObjectHandler {
   //Individual
   def getNamedIndividualsFromClass(oWLClass: OWLClass)(oWLReasoner: OWLReasoner): List[OWLNamedIndividual] = {
     Converters.convertJavaStreamToScalaList(oWLReasoner.getInstances(oWLClass).entities())
+  }
+
+  def getAnnotationAssertionAxiomsForIndividual(oWLNamedIndividual: OWLNamedIndividual)(oWLOntology: OWLOntology): List[OWLAnnotationAssertionAxiom] = {
+    Converters.convertJavaStreamToScalaList(oWLOntology.annotationAssertionAxioms(oWLNamedIndividual.getIRI))
   }
 
 }
