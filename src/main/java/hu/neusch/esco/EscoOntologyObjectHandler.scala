@@ -1,6 +1,6 @@
 package hu.neusch.esco
 
-import hu.neusch.esco.EscoClasses.EscoClass
+import hu.neusch.esco.EscoClass.EscoClass
 import hu.neusch.ontology.OntologyObjectHandler
 import hu.neusch.utils.io.OntologyLoader
 import org.semanticweb.owlapi.model.{OWLClass, OWLNamedIndividual, OWLOntology}
